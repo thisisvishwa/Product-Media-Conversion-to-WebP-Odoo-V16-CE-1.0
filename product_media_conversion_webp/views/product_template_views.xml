@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+
+        <!-- Inherit the product template form view to add WebP conversion settings -->
+        <record id="product_template_form_view_webp" model="ir.ui.view">
+            <field name="name">product.template.form.webp</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_image_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='image_optimization']" position="inside">
+                    <group string="WebP Conversion Settings">
+                        <field name="webp_enabled"/>
+                        <field name="webp_quality"/>
+                        <button string="Convert to WebP" type="object" name="convert_to_webp" class="oe_highlight"/>
+                        <label for="webp_conversion_status"/>
+                        <div>
+                            <field name="webp_conversion_status" nolabel="1" readonly="1"/>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- View for WebP conversion settings -->
+        <record id="webp_conversion_settings_form" model="ir.ui.view">
+            <field name="name">webp.conversion.settings.form</field>
+            <field name="model">webp.settings</field>
+            <field name="arch" type="xml">
+                <form string="WebP Conversion Settings">
+                    <sheet>
+                        <group string="Conversion Parameters">
+                            <field name="conversion_quality"/>
+                            <field name="conversion_method"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- View for error log list -->
+        <record id="error_log_list_view" model="ir.ui.view">
+            <field name="name">error.log.list.view</field>
+            <field name="model">webp.error.log</field>
+            <field name="arch" type="xml">
+                <tree string="WebP Conversion Error Log">
+                    <field name="create_date"/>
+                    <field name="error_message"/>
+                    <field name="product_id"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

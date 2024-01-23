@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+
+        <!-- Error Log List View -->
+        <record id="error_log_list_view" model="ir.ui.view">
+            <field name="name">error.log.list.view</field>
+            <field name="model">error.log</field>
+            <field name="arch" type="xml">
+                <tree string="Error Logs">
+                    <field name="create_date" string="Date"/>
+                    <field name="error_message" string="Error Message"/>
+                    <field name="error_details" string="Details"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Error Log Form View -->
+        <record id="error_log_form_view" model="ir.ui.view">
+            <field name="name">error.log.form.view</field>
+            <field name="model">error.log</field>
+            <field name="arch" type="xml">
+                <form string="Error Log">
+                    <sheet>
+                        <group>
+                            <field name="create_date" string="Date"/>
+                            <field name="error_message" string="Error Message"/>
+                            <field name="error_details" string="Details"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Error Log Action -->
+        <record id="action_error_log" model="ir.actions.act_window">
+            <field name="name">Error Logs</field>
+            <field name="res_model">error.log</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="error_log_list_view"/>
+        </record>
+
+        <!-- Error Log Menu Item -->
+        <menuitem id="menu_error_log" name="Error Logs"
+                  action="action_error_log"
+                  parent="product_media_conversion_webp.menu_product_media_conversion_root"
+                  sequence="20"/>
+
+    </data>
+</odoo>

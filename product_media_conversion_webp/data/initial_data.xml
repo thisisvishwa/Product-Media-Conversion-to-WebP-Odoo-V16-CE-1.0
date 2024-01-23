@@ -1,0 +1,28 @@
+<odoo>
+    <data noupdate="1">
+        <!-- WebP Conversion Settings -->
+        <record id="default_webp_conversion_settings" model="webp.conversion.config.settings">
+            <field name="name">Default Settings</field>
+            <field name="convert_to_webp" eval="True"/>
+            <field name="quality" eval="80"/>
+        </record>
+
+        <!-- Error Log Group -->
+        <record id="group_webp_error_log_manager" model="res.groups">
+            <field name="name">WebP Error Log Manager</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+
+        <!-- Access Rights for Error Log -->
+        <record id="access_error_log" model="ir.model.access">
+            <field name="name">error.log.access</field>
+            <field name="model_id" ref="product_media_conversion_webp.model_error_log"/>
+            <field name="group_id" ref="product_media_conversion_webp.group_webp_error_log_manager"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+    </data>
+</odoo>

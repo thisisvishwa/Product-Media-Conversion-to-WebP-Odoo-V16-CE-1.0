@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+
+        <!-- WebP Conversion Settings Form View -->
+        <record id="webp_conversion_settings_form" model="ir.ui.view">
+            <field name="name">webp.conversion.settings.form</field>
+            <field name="model">webp.settings</field>
+            <field name="arch" type="xml">
+                <form string="WebP Conversion Settings">
+                    <sheet>
+                        <group>
+                            <field name="enable_auto_conversion" widget="checkbox"/>
+                            <field name="conversion_quality"/>
+                        </group>
+                        <group string="Advanced Settings">
+                            <field name="resize_width"/>
+                            <field name="resize_height"/>
+                            <field name="preserve_aspect_ratio" widget="checkbox"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- WebP Conversion Settings Action -->
+        <record id="action_webp_conversion_settings" model="ir.actions.act_window">
+            <field name="name">WebP Conversion Settings</field>
+            <field name="res_model">webp.settings</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="webp_conversion_settings_form"/>
+            <field name="target">new</field>
+        </record>
+
+        <!-- WebP Conversion Settings Menu Item -->
+        <menuitem id="menu_webp_conversion_settings"
+                  name="WebP Conversion Settings"
+                  action="action_webp_conversion_settings"
+                  parent="base.menu_custom"
+                  sequence="10"/>
+
+    </data>
+</odoo>

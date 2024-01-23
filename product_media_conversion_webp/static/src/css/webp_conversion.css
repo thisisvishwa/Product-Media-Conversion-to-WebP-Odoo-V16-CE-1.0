@@ -1,0 +1,43 @@
+/* WebP Conversion Button Styles */
+.webp-conversion-button {
+    background-color: #5c7cfa;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.webp-conversion-button:hover {
+    background-color: #4263eb;
+}
+
+/* WebP Conversion Status Message Styles */
+.webp-conversion-status {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* WebP Error Message Styles */
+.webp-error-message {
+    color: #ff6b6b;
+    background-color: #ffe3e3;
+    border: 1px solid #ff6b6b;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* General Error Log Styles */
+.webp-error-log {
+    font-size: 0.875rem;
+    color: #343a40;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
