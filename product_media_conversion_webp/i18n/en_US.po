@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: product_media_conversion_webp 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-01 12:00+0000\n"
+"PO-Revision-Date: 2023-04-01 12:00+0000\n"
+"Last-Translator: Vishwa G\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product_media_conversion_webp.model_product_template
+msgid "Product Template"
+msgstr "Product Template"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_product_template_image_webp
+msgid "Image WebP"
+msgstr "Image WebP"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_product_template_image
+msgid "Original Image"
+msgstr "Original Image"
+
+#. module: product_media_conversion_webp
+#: model:ir.ui.view,arch_db:product_media_conversion_webp.product_template_form_view_webp
+msgid "Product Template Form with WebP Settings"
+msgstr "Product Template Form with WebP Settings"
+
+#. module: product_media_conversion_webp
+#: model:ir.actions.server,name:product_media_conversion_webp.action_convert_to_webp
+msgid "Convert to WebP"
+msgstr "Convert to WebP"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_active
+msgid "Enable WebP Conversion"
+msgstr "Enable WebP Conversion"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_error_log_message
+msgid "Error Message"
+msgstr "Error Message"
+
+#. module: product_media_conversion_webp
+#: model:ir.ui.view,arch_db:product_media_conversion_webp.error_log_list_view
+msgid "Error Log List"
+msgstr "Error Log List"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_error_log_record_id
+msgid "Related Record"
+msgstr "Related Record"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_error_log_model
+msgid "Model"
+msgstr "Model"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_error_log_function
+msgid "Function"
+msgstr "Function"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_error_log_traceback
+msgid "Traceback"
+msgstr "Traceback"
+
+#. module: product_media_conversion_webp
+#: model:ir.model,name:product_media_conversion_webp.model_webp_conversion_wizard
+msgid "WebP Conversion Wizard"
+msgstr "WebP Conversion Wizard"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_conversion_wizard_message
+msgid "Conversion Message"
+msgstr "Conversion Message"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_quality
+msgid "WebP Quality"
+msgstr "WebP Quality"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_method
+msgid "WebP Conversion Method"
+msgstr "WebP Conversion Method"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_lossless
+msgid "WebP Lossless"
+msgstr "WebP Lossless"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_alpha_quality
+msgid "WebP Alpha Quality"
+msgstr "WebP Alpha Quality"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_near_lossless
+msgid "WebP Near Lossless"
+msgstr "WebP Near Lossless"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_sharpness
+msgid "WebP Sharpness"
+msgstr "WebP Sharpness"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_thread_level
+msgid "WebP Thread Level"
+msgstr "WebP Thread Level"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_low_memory
+msgid "WebP Low Memory"
+msgstr "WebP Low Memory"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_hint
+msgid "WebP Image Hint"
+msgstr "WebP Image Hint"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_emulate_jpeg_size
+msgid "Emulate JPEG Size"
+msgstr "Emulate JPEG Size"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_thread_count
+msgid "WebP Thread Count"
+msgstr "WebP Thread Count"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_partition_limit
+msgid "WebP Partition Limit"
+msgstr "WebP Partition Limit"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_partition
+msgid "WebP Partition"
+msgstr "WebP Partition"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_segments
+msgid "WebP Segments"
+msgstr "WebP Segments"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_sns_strength
+msgid "WebP SNS Strength"
+msgstr "WebP SNS Strength"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_filter_strength
+msgid "WebP Filter Strength"
+msgstr "WebP Filter Strength"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_filter_sharpness
+msgid "WebP Filter Sharpness"
+msgstr "WebP Filter Sharpness"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_filter_type
+msgid "WebP Filter Type"
+msgstr "WebP Filter Type"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_autofilter
+msgid "WebP Auto Filter"
+msgstr "WebP Auto Filter"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_alpha_compression
+msgid "WebP Alpha Compression"
+msgstr "WebP Alpha Compression"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_alpha_filtering
+msgid "WebP Alpha Filtering"
+msgstr "WebP Alpha Filtering"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_pass
+msgid "WebP Pass"
+msgstr "WebP Pass"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_preprocessing
+msgid "WebP Preprocessing"
+msgstr "WebP Preprocessing"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_analysis_pass
+msgid "WebP Analysis Pass"
+msgstr "WebP Analysis Pass"
+
+#. module: product_media_conversion_webp
+#: model:ir.model.fields,field_description:product_media_conversion_webp.field_webp_settings_use_sharp_yuv
+msgid "Use Sharp YUV in WebP"
+msgstr "Use Sharp YUV in WebP"

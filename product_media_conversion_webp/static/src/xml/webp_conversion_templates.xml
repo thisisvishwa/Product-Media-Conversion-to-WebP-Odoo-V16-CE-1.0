@@ -1,0 +1,33 @@
+<odoo>
+    <templates>
+        <t t-name="product_media_conversion_webp.webp_conversion_button">
+            <button type="button" class="btn btn-secondary o_form_button_webp_conversion" id="webp_conversion_button">
+                Convert to WebP
+            </button>
+        </t>
+
+        <t t-name="product_media_conversion_webp.webp_conversion_status">
+            <div id="webp_conversion_status" class="o_webp_conversion_status">
+                <span t-if="widget.record.data.webp_conversion_status.raw_value === 'pending'">
+                    Conversion Pending
+                </span>
+                <span t-if="widget.record.data.webp_conversion_status.raw_value === 'done'">
+                    Conversion Done
+                </span>
+                <span t-if="widget.record.data.webp_conversion_status.raw_value === 'error'">
+                    Conversion Error
+                </span>
+            </div>
+        </t>
+
+        <t t-name="product_media_conversion_webp.webp_error_log">
+            <div id="webp_error_log" class="o_webp_error_log">
+                <t t-foreach="widget.record.data.error_log_ids.data" t-as="log">
+                    <div class="alert alert-danger" role="alert">
+                        <t t-esc="log.data.message"/>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </templates>
+</odoo>
